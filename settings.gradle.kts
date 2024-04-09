@@ -22,3 +22,8 @@ dependencyResolutionManagement {
 rootProject.name = "RCDA31"
 include(":app")
 include(":mod3demo1")
+include(":mod3tp1")
+include(":mod4demo1")
+include(":mod4demo2")
+include(":mod4demo3")
+include(":mod4demo4")
