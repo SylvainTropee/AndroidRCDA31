@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.mod4demo4"
+    namespace = "com.example.mod5demo1"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.mod4demo4"
+        applicationId = "com.example.mod5demo1"
         minSdk = 26
         targetSdk = 34
         versionCode = 1
@@ -33,6 +33,7 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
     buildFeatures {
         dataBinding = true
     }
@@ -40,8 +41,10 @@ android {
 
 dependencies {
 
-    val lifecycle_version = "2.4.0"
-    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version")
+    val nav_version = "2.5.3"
+    implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
+    implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
