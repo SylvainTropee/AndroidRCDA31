@@ -26,7 +26,9 @@
         tools:layout="@layout/fragment_white" >
         <action
             android:id="@+id/actionWhiteToRed"
-            app:destination="@id/redFragment" />
+            app:destination="@id/redFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right" />
         <action
             android:id="@+id/actionWhiteToGreen"
             app:destination="@id/greenFragment" />

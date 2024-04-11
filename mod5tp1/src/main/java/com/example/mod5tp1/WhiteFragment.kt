@@ -26,11 +26,11 @@ class WhiteFragment : Fragment() {
 
         view.findViewById<Button>(R.id.buttonWhite).setOnClickListener {
             Log.i(TAG, "Simple clic")
-            //Navigation.findNavController(view).navigate(R.id.actionWhiteToRed)
+            Navigation.findNavController(view).navigate(R.id.actionWhiteToRed)
         }
 
         view.findViewById<Button>(R.id.buttonWhite).setOnLongClickListener {
-            //Navigation.findNavController(view).navigate(R.id.actionWhiteToGreen)
+            Navigation.findNavController(view).navigate(R.id.actionWhiteToGreen)
             Log.i(TAG, "Long clic")
             return@setOnLongClickListener false
         }
